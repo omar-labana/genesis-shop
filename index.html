@@ -4,9 +4,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zattix Shop</title>
+    <title>Genesis Shop</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/080dba293e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class=" bg-gray py-3 white flex justify-between px-1 font-medium sec-text" >
+        <div class="logo inline text-xs">
+            <i class="fas fa-store base-color-text"></i>
+            <a href="#" class="text-white">GENESIS</a>
+        </div>
+        <ul class="list-none nav-links sec-color-text small-text">
+            <li class="base-color-text">
+                <i class="fas fa-home mx-1">
+                </i><a href="#">HOME</a>
+            </li>
+            <li>
+                <i class="fas fa-tshirt mx-1"></i>
+                <a href="#">COLLECTIONS</a>
+            </li>
+            <li>
+                <i class="fas fa-shopping-cart mx-1"></i>
+                <a href="#">PURCHASE LIST</a>
+            </li>
+        </ul>
+    </header>
+    <!-- SEARCH -->
+    <section class="base-color-bg py-12 px-6">
+        <h1 class="text-white text-5xl text-center">GENESIS</h1>
+        <p class="text-gray-100	text-center">Your Next Favorite Piece of Cloth.</p>
+        
+        <select name="deps" class="py-1 px-2 w-full my-2 mt-7">
+            <option value="all">All Departments</option>
+            <option value="men">Men</option>
+            <option value="women">Women</option>
+            <option value="children">Children</option>
+        </select>
+            
+        <input type="text" class="py-1 px-2 w-full my-1" placeholder="What are you looking for?">
+
+        <input type="text" class="py-1 px-2 w-full my-1" placeholder="Country/Region">
+    </section>
+    <!-- SEARCH -->
+    <!-- HOT ADS -->
+
+    <section class="my-6 ">
+        <h2 class="px-6">HOT ADS</h2>
+        <div class="grid grid-cols-12 items-center justify-items-center my-5">
+            <i class="fas fa-arrow-left col-span-2 base-color-text border-2 p-2 rounded-full"></i>
+            <div class="col-span-8">
+                <img src="assets/hot-ad.jpg" alt=""">
+                <h3 class="text-sm base-color-text font-bold">Nerd Hoodie</h3>
+                <p class="small-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus itaque iure debitis dolor aut repudiandae deleniti consectetur.</p>
+                <p class="text-xs">By <a href="#" class="sec-color-text">Jhon Doe</a></p>
+                <p class="text-xs">Location: <a href="#" class="sec-color-text">Cairo, Egypt</a></p>
+                <button class="base-color-bg text-white px-5 py-1 m-0">99$</button><button class="base-color-bg text-white px-5 py-1 m-0 border-l border-gray-500"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+            </div>
+            <i class="fas fa-arrow-right col-span-2 base-color-text border-2 p-2 rounded-full"></i>
+        </div>
+    </section>
+
+    <!-- HOT ADS -->
+
+    <!-- MAIN SECTION -->
+
+    <main class="bg-main border-t border-b border-gray-300	">
+        <section class="px-6">
+            <h2 class="darky-text py-3 border-b border-gray-300">
+                <i class="fas fa-parachute-box mr-2"></i> New Arrival 
+                <span class="sec-color-text ml-1">
+                    (Spring and Summer)
+                </span>
+            </h2>
+            <div class="card my-5 px-4 border border-gray-300">
+                <img src="assets/new-arrival-1.jpg" alt="" class="mt-1">
+                <h3 class="darky-text">Basic Sweatpants - Black</h3>
+                <h4 class="base-color-text">New</h4>
+                <h5 class="sec-color-text">By <span class="darky-text">GENESIS</span></h5>
+                <span class="flex justify-between py-3">
+                    <button class="border px-1 sec-color-text">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <h6 class="base-color-text font-bold">10$</h6>
+                </span>
+            </div>
+        </section>
+    </main>
+
+    <!-- MAIN SECTION -->
+
+    <!-- FOOTER -->
     
+    <footer class="px-6">
+        <div class="sec-color-text text-2xl text-center mt-20">
+            <i class="fas fa-store"></i>
+            <a href="#">GENESIS</a>
+        </div>
+        <p class="sec-color-text text-xs my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium doloribus dignissimos autem iusto corporis. Consequuntur nemo non eius inventore, quibusdam illum voluptates iusto nobis tempora? Incidunt enim quis sed odit?</p>
+        <section>
+            <h2 class="base-color-text border-b border-red-600 font-bold">CATEGORIES</h2>
+            <ul>
+                <li class="flex justify-between">
+                    <a href="#">Silk Products</a>
+                    <a href="#">Silk Products</a>
+                </li>
+                <li class="flex justify-between">
+                    <a href="#">Silk Products</a>
+                    <a href="#">Silk Products</a>
+                </li>
+                <li class="flex justify-between">
+                    <a href="#">Silk Products</a>
+                    <a href="#">Silk Products</a>
+                </li>
+                <li class="flex justify-between">
+                    <a href="#">Silk Products</a>
+                    <a href="#">Silk Products</a>
+                </li>
+                <li class="flex justify-between">
+                    <a href="#">Silk Products</a>
+                    <a href="#">Silk Products</a>
+                </li>
+            </ul>
+            <h2 class="base-color-text border-b border-red-600 font-bold">CREDITS</h2>
+            <ul>
+                <li>
+                    <a href="#">Silk Products</a>
+                </li>
+                <li>
+                    <a href="#">Silk Products</a>
+                </li>
+                <li>
+                    <a href="#">Silk Products</a>
+                </li>
+                <li>
+                    <a href="#">Silk Products</a>
+                </li>
+                <li>
+                    <a href="#">Silk Products</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="flex justify-between items-center	my-3">
+                    <p class="base-color-text font-bold">COUNTRY</p>
+                    <select name="lang" id="lang" class="px-3 py-1 border border-gray-300">
+                        <option value="en">Egypt</option>
+                    </select>
+                </li>
+                <li class="flex justify-between items-center	my-3">
+                    <p class="base-color-text font-bold">LANGUAGE</p>
+                    <select name="lang" id="lang" class="px-3 py-1 border border-gray-300">
+                        <option value="en">English</option>
+                    </select>
+                </li>
+                <li class="flex justify-between items-center my-3">
+                    <p class="base-color-text font-bold">CURRENCY</p>
+                    <select name="lang" id="lang" class="px-3 py-1 border border-gray-300">
+                        <option value="en">US Dollars</option>
+                    </select>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <div class="copyrights">
+            <p class="text-xs">
+                Made with <i class="fas fa-heart"></i> by <span class="font-bold">Omar Labana</span>. &#169; Copyright 2021 - 20xx
+            </p>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
 </body>
 </html>

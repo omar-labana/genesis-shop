@@ -1,1 +1,63 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
+@import url(//db.onlinewebfonts.com/c/9134c840456c4db0a3489b3db0fd3298?family=Helvetica+Neue+LT+Com);
+.bg-gray {
+  background-color: #383838;
+}
+
+.base-color-text {
+  color: #d35266;
+}
+
+.sec-color-text {
+  color: #888888;
+}
+
+.base-color-bg {
+  background-color: #d35266;
+}
+
+.bg-main {
+  background-color: #f1f1f1;
+}
+
+#shop-icon {
+  fill: #d35266;
+}
+
+.nav-links {
+  display: inline;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.small-text {
+  font-size: 9px;
+}
+
+.primary-text {
+  font-family: 'Helvetica Neue LT Com';
+}
+
+.sec-text {
+  font-family: 'GothamPro';
+}
+
+.icon-in-input-cont {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon-in-input-cont i {
+  position: absolute;
+}
+
+.darky-text {
+  color: #383838;
+}
+
+.card {
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */
