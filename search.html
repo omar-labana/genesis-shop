@@ -63,134 +63,242 @@
     
     </section>
     <!-- SEARCH -->
-    <main class="bg-main px-6">
-        <section>
-            <h2 class="text-sm">
-                <span>8</span>
-                result/s for "<span class="font-bold">Hoodie</span>"
-                in Department "<span class="font-bold">Men</span>"
-                Season "<span class="font-bold">Winter</span>"
-            </h2>
-            <div class="flex justify-between">
-                <div class="mt-2">
-                    <label for="filter">Filter by</label>
-                    <select name="filter" id="filter">
-                        <option value="Date Arrived">Date</option>
-                    </select>
+    <main class="bg-main px-6 lg:px-32">
+        <div class="md:grid grid-cols-12 md:border border-l-0">
+            <div class="col-span-4 md:border-r hidden md:block">
+                <div class="mx-2 my-3"> 
+                    <!-- checkboxes -->
+                    <span>
+                        <input type="checkbox" name="sale" id="sale">
+                        <label for="sale">On Sale</label>
+                    </span>
+                    <span class="ml-9">
+                        <input type="checkbox" name="sale" id="sale">
+                        <label for="sale">New Arrival</label>
+                    </span>
                 </div>
-                <div class="mt-2">
-                    <label for="filter">Sort by</label>
-                    <select name="filter" id="filter">
-                        <option value="price">Price</option>
-                    </select>
-                </div>
+                <ul class="mx-2">
+                    <li>
+                        <h2 class="border-b font-bold my-5">Department</h2>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="men" id="men">
+                        <label for="men">Men</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="women" id="women">
+                        <label for="women">Women</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="kids" id="kids">
+                        <label for="kids">Kids</label>
+                    </li>
+                </ul>
+                <ul class="mx-2">
+                    <li>
+                        <h2 class="border-b font-bold my-5">Collection</h2>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="summer" id="summer">
+                        <label for="summer">Summer</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="winter" id="winter">
+                        <label for="winter">Winter</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="spring" id="spring">
+                        <label for="spring">Spring</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="autumn" id="autumn">
+                        <label for="autumn">Autumn</label>
+                    </li>
+                </ul>
+                <ul class="mx-2">
+                    <li>
+                        <h2 class="border-b font-bold my-5">Price Range</h2>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="range-1" id="srange-1">
+                        <label for="range-1">5$ - 10$</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="range-2" id="srange-2">
+                        <label for="range-2">10$ - 15$</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="range-2" id="srange-2">
+                        <label for="range-2">15$ - 20$</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="range-3" id="srange-3">
+                        <label for="range-3">+20$</label>
+                    </li>
+                </ul>
             </div>
-        </section>
-        <div id="result-cards">
-            <!-- CARD 1 -->
-            <div class="result-card py-4 border-gray-300 border-b">
-                <img src="assets/hoodie-1.jpg" alt="">
-                <h3 class="font-bold">Nerd Hoodie</h3>
-                <span class="base-color-text block font-bold text-xs">New Arrival</span>
-                <span class="text-xs leading-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
-                <p class="text-sm font-bold">Mens Hoodie</p>
-                <div class="flex justify-between text-sm items-center">
-                    <p>In Stock</p>
-                    <button class="text-white base-color-bg px-4 py-1">10$</button>
+            <div class="col-span-8">
+                <section>
+                    <h2 class="text-sm md:px-3 mt-4 md:pb-4 md:border-b">
+                        <span>28</span>
+                        result/s for "<span class="font-bold">Hoodie</span>"
+                        in Department "<span class="font-bold">Men</span>"
+                        Season "<span class="font-bold">Winter</span>"
+                    </h2>
+                    <div class="flex justify-between lg:hidden">
+                        <div class="mt-2">
+                            <label for="filter">Filter by</label>
+                            <select name="filter" id="filter">
+                                <option value="Date Arrived">Date</option>
+                            </select>
+                        </div>
+                        <div class="mt-2">
+                            <label for="filter">Sort by</label>
+                            <select name="filter" id="filter">
+                                <option value="price">Price</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <div id="result-cards">
+                    <!-- CARD 1 -->
+                    <div class="result-card py-4 border-gray-300 border-b md:flex">
+                        <img src="assets/hoodie-1.jpg" alt="" class="md:w-4/12 md:px-3">
+                        <div class="md:w-8/12 md:px-1 md:mr-4 md:flex md:justify-between flex-col">
+                            <h3 class="font-bold lg:text-xl">Nerd Hoodie</h3>
+                            <span class="base-color-text block font-bold text-xs">New Arrival</span>
+                            <span class="text-xs leading-3 xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
+                            <p class="text-sm font-bold">Mens Hoodie</p>
+                            <div class="flex justify-between text-sm items-center">
+                                <p>In Stock</p>
+                                <button class="text-white base-color-bg px-4 py-1">10$</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 1 -->
+                    <div class="result-card py-4 border-gray-300 border-b md:flex">
+                        <img src="assets/hoodie-2.jpg" alt="" class="md:w-4/12 md:px-3">
+                        <div class="md:w-8/12 md:px-1 md:mr-4 md:flex md:justify-between flex-col">
+                            <h3 class="font-bold lg:text-xl">Nerd Hoodie</h3>
+                            <span class="base-color-text block font-bold text-xs">New Arrival</span>
+                            <span class="text-xs leading-3 xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
+                            <p class="text-sm font-bold">Mens Hoodie</p>
+                            <div class="flex justify-between text-sm items-center">
+                                <p>In Stock</p>
+                                <button class="text-white base-color-bg px-4 py-1">10$</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 1 -->
+                    <div class="result-card py-4 border-gray-300 border-b md:flex">
+                        <img src="assets/hoodie-3.jpg" alt="" class="md:w-4/12 md:px-3">
+                        <div class="md:w-8/12 md:px-1 md:mr-4 md:flex md:justify-between flex-col">
+                            <h3 class="font-bold lg:text-xl">Nerd Hoodie</h3>
+                            <span class="base-color-text block font-bold text-xs">New Arrival</span>
+                            <span class="text-xs leading-3 xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
+                            <p class="text-sm font-bold">Mens Hoodie</p>
+                            <div class="flex justify-between text-sm items-center">
+                                <p>In Stock</p>
+                                <button class="text-white base-color-bg px-4 py-1">10$</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 1 -->
+                    <div class="result-card py-4 border-gray-300 border-b md:flex">
+                        <img src="assets/hoodie-4.jpg" alt="" class="md:w-4/12 md:px-3">
+                        <div class="md:w-8/12 md:px-1 md:mr-4 md:flex md:justify-between flex-col">
+                            <h3 class="font-bold lg:text-xl">Nerd Hoodie</h3>
+                            <span class="base-color-text block font-bold text-xs">New Arrival</span>
+                            <span class="text-xs leading-3 xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
+                            <p class="text-sm font-bold">Mens Hoodie</p>
+                            <div class="flex justify-between text-sm items-center">
+                                <p>In Stock</p>
+                                <button class="text-white base-color-bg px-4 py-1">10$</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 1 -->
+                    <div class="result-card py-4 border-gray-300 border-b md:flex">
+                        <img src="assets/hoodie-9.jpg" alt="" class="md:w-4/12 md:px-3">
+                        <div class="md:w-8/12 md:px-1 md:mr-4 md:flex md:justify-between flex-col">
+                            <h3 class="font-bold lg:text-xl">Nerd Hoodie</h3>
+                            <span class="base-color-text block font-bold text-xs">New Arrival</span>
+                            <span class="text-xs leading-3 xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
+                            <p class="text-sm font-bold">Mens Hoodie</p>
+                            <div class="flex justify-between text-sm items-center">
+                                <p>In Stock</p>
+                                <button class="text-white base-color-bg px-4 py-1">10$</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 1 -->
+                    <div class="result-card py-4 border-gray-300 border-b md:flex">
+                        <img src="assets/hoodie-5.jpg" alt="" class="md:w-4/12 md:px-3">
+                        <div class="md:w-8/12 md:px-1 md:mr-4 md:flex md:justify-between flex-col">
+                            <h3 class="font-bold lg:text-xl">Nerd Hoodie</h3>
+                            <span class="base-color-text block font-bold text-xs">New Arrival</span>
+                            <span class="text-xs leading-3 xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
+                            <p class="text-sm font-bold">Mens Hoodie</p>
+                            <div class="flex justify-between text-sm items-center">
+                                <p>In Stock</p>
+                                <button class="text-white base-color-bg px-4 py-1">10$</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 1 -->
+                    <div class="result-card py-4 border-gray-300 border-b md:flex">
+                        <img src="assets/hoodie-6.jpg" alt="" class="md:w-4/12 md:px-3">
+                        <div class="md:w-8/12 md:px-1 md:mr-4 md:flex md:justify-between flex-col">
+                            <h3 class="font-bold lg:text-xl">Nerd Hoodie</h3>
+                            <span class="base-color-text block font-bold text-xs">New Arrival</span>
+                            <span class="text-xs leading-3 xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
+                            <p class="text-sm font-bold">Mens Hoodie</p>
+                            <div class="flex justify-between text-sm items-center">
+                                <p>In Stock</p>
+                                <button class="text-white base-color-bg px-4 py-1">10$</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 1 -->
+                    <div class="result-card py-4 border-gray-300 border-b md:flex">
+                        <img src="assets/hoodie-7.jpg" alt="" class="md:w-4/12 md:px-3">
+                        <div class="md:w-8/12 md:px-1 md:mr-4 md:flex md:justify-between flex-col">
+                            <h3 class="font-bold lg:text-xl">Nerd Hoodie</h3>
+                            <span class="base-color-text block font-bold text-xs">New Arrival</span>
+                            <span class="text-xs leading-3 xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
+                            <p class="text-sm font-bold">Mens Hoodie</p>
+                            <div class="flex justify-between text-sm items-center">
+                                <p>In Stock</p>
+                                <button class="text-white base-color-bg px-4 py-1">10$</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 1 -->
+                    <div class="result-card py-4 border-gray-300 border-b md:flex">
+                        <img src="assets/hoodie-8.jpg" alt="" class="md:w-4/12 md:px-3">
+                        <div class="md:w-8/12 md:px-1 md:mr-4 md:flex md:justify-between flex-col">
+                            <h3 class="font-bold lg:text-xl">Nerd Hoodie</h3>
+                            <span class="base-color-text block font-bold text-xs">New Arrival</span>
+                            <span class="text-xs leading-3 xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
+                            <p class="text-sm font-bold">Mens Hoodie</p>
+                            <div class="flex justify-between text-sm items-center">
+                                <p>In Stock</p>
+                                <button class="text-white base-color-bg px-4 py-1">10$</button>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="pagination flex justify-around my-3 mx-6 pb-3 md:w-1/2">
+                        <button class="border px-2 text-white base-color-bg">1</button>
+                        <button class="border px-2 sec-color-text bg-white">2</button>
+                        <button class="border px-2 sec-color-text bg-white">3</button>
+                        <span>...</span>
+                        <button class="border px-2 sec-color-text bg-white">9</button>
+                    </div>
                 </div>
-            </div>
-            <!-- CARD 2 -->
-            <div class="result-card py-4 border-gray-300 border-b">
-                <img src="assets/hoodie-2.jpg" alt="">
-                <h3 class="font-bold">Basic Hoodie - Heather Grey</h3>
-                <span class="base-color-text block font-bold text-xs">New Arrival</span>
-                <span class="text-xs leading-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
-                <p class="text-sm font-bold">Mens Hoodie</p>
-                <div class="flex justify-between text-sm items-center">
-                    <p>In Stock</p>
-                    <button class="text-white base-color-bg px-4 py-1">14$</button>
-                </div>
-            </div>
-            <!-- CARD 3 -->
-            <div class="result-card py-4 border-gray-300 border-b">
-                <img src="assets/hoodie-3.jpg" alt="">
-                <h3 class="font-bold">Life Is Good - Yellow</h3>
-                <span class="base-color-text block font-bold text-xs">Spring Promotion</span>
-                <span class="text-xs leading-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
-                <p class="text-sm font-bold">Mens Hoodie</p>
-                <div class="flex justify-between text-sm items-center">
-                    <p>Out of Stock</p>
-                    <button class="text-white bg-red-200 px-4 py-1">14$</button>
-                </div>
-            </div>
-            <!-- CARD 4 -->
-            <div class="result-card py-4 border-gray-300 border-b">
-                <img src="assets/hoodie-4.jpg" alt="">
-                <h3 class="font-bold">Catch Your Dream - Light Blue</h3>
-                <span class="base-color-text block font-bold text-xs">Summer Sale</span>
-                <span class="text-xs leading-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
-                <p class="text-sm font-bold">Mens Hoodie</p>
-                <div class="flex justify-between text-sm items-center">
-                    <p>In Stock</p>
-                    <button class="text-white base-color-bg px-4 py-1">10$</button>
-                </div>
-            </div>
-            <!-- CARD 5 -->
-            <div class="result-card py-4 border-gray-300 border-b">
-                <img src="assets/hoodie-5.jpg" alt="">
-                <h3 class="font-bold">Don't Worry Be Happy - Purple</h3>
-                <span class="base-color-text block font-bold text-xs">Summer Sale</span>
-                <span class="text-xs leading-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
-                <p class="text-sm font-bold">Mens Hoodie</p>
-                <div class="flex justify-between text-sm items-center">
-                    <p>In Stock</p>
-                    <button class="text-white base-color-bg px-4 py-1">10$</button>
-                </div>
-            </div>
-            <!-- CARD 6 -->
-            <div class="result-card py-4 border-gray-300 border-b">
-                <img src="assets/hoodie-6.jpg" alt="">
-                <h3 class="font-bold">Punctuation - Navy Blue</h3>
-                <span class="base-color-text block font-bold text-xs">Summer Sale</span>
-                <span class="text-xs leading-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
-                <p class="text-sm font-bold">Mens Hoodie</p>
-                <div class="flex justify-between text-sm items-center">
-                    <p>In Stock</p>
-                    <button class="text-white base-color-bg px-4 py-1">10$</button>
-                </div>
-            </div>
-            <!-- CARD 7 -->
-            <div class="result-card py-4 border-gray-300 border-b">
-                <img src="assets/hoodie-8.jpg" alt="">
-                <h3 class="font-bold">None Of Our Business - Dark Grey</h3>
-                <span class="base-color-text block font-bold text-xs">Summer Sale</span>
-                <span class="text-xs leading-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
-                <p class="text-sm font-bold">Mens Hoodie</p>
-                <div class="flex justify-between text-sm items-center">
-                    <p>In Stock</p>
-                    <button class="text-white base-color-bg px-4 py-1">10$</button>
-                </div>
-            </div>
-            <!-- CARD 8 -->
-            <div class="result-card py-4 border-gray-300 border-b">
-                <img src="assets/hoodie-9.jpg" alt="">
-                <h3 class="font-bold">Millionaire - Grape</h3>
-                <span class="base-color-text block font-bold text-xs">Spring Promotion</span>
-                <span class="text-xs leading-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi enim quia. Eius facere exercitationem optio voluptatem.</span>
-                <p class="text-sm font-bold">Mens Hoodie</p>
-                <div class="flex justify-between text-sm items-center">
-                    <p>In Stock</p>
-                    <button class="text-white base-color-bg px-4 py-1">10$</button>
-                </div>
-            </div>
-            <div class="pagination flex justify-around my-2 mx-6">
-                <button class="border px-2 text-white base-color-bg">1</button>
-                <button class="border px-2 sec-color-text bg-white">2</button>
-                <button class="border px-2 sec-color-text bg-white">3</button>
-                <span>...</span>
-                <button class="border px-2 sec-color-text bg-white">5</button>
             </div>
         </div>
+        
     </main>
     <!-- FOOTER -->
     
