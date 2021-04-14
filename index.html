@@ -10,46 +10,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class=" bg-gray py-3 white flex justify-between px-1 font-medium sec-text" >
-        <div class="logo inline text-xs">
+    <header class=" bg-gray py-3 white flex justify-between md:justify-start px-1 font-medium sec-text md:px-6 items-center lg:justify-between lg:text-sm lg:px-16" >
+        <div class="logo inline text-xs lg:text-sm">
             <i class="fas fa-store base-color-text"></i>
             <a href="#" class="text-white">GENESIS</a>
         </div>
-        <ul class="list-none nav-links sec-color-text small-text">
-            <li class="base-color-text">
+        <ul class="list-none nav-links sec-color-text small-text md:ml-7 ">
+            <li class="base-color-text md:mx-3 md:text-sm">
                 <i class="fas fa-home mx-1">
                 </i><a href="#">HOME</a>
             </li>
-            <li>
+            <li class="md:mx-3 md:text-sm">
                 <i class="fas fa-tshirt mx-1"></i>
                 <a href="#">COLLECTIONS</a>
             </li>
-            <li>
+            <li class="md:mx-3 md:text-sm">
                 <i class="fas fa-shopping-cart mx-1"></i>
                 <a href="#">PURCHASE LIST</a>
             </li>
+            <li class="md:mx-3 lg:text-xs">
+                <div class="hidden md:inline">
+                    <button class="text-white base-color-bg px-2 py-1">BECOME A PARTNER</button>
+                </div>
+            </li>
         </ul>
+        <div class="small-text text-white hidden lg:flex items-center">
+            <i class="far fa-bell sec-color-text text-sm mx-3 "></i>
+            <span class="mx-2 lg:text-sm">Mr. Panda</span>
+            <img src="assets/panda-face.jpg" alt="" class="rounded-full mx-3" width="25">
+        </div>
     </header>
     <!-- SEARCH -->
-    <section class="base-color-bg py-12 px-6">
+    <section class="base-color-bg pt-28 pb-12 px-6">
         <h1 class="text-white text-5xl text-center">GENESIS</h1>
-
             <p class="text-gray-100	text-center">Your Next Favorite Piece of Cloth.</p>
+            <div class="grid grid-cols-12 md:gap-1 my-3 text-xs lg:mx-40 md:mt-14">
+                <select name="deps" class="col-span-12 md:col-span-2 text-center px-3 py-2 ">
+                    <option value="all">All Departments</option>
+                    <option value="men">Men</option>
+                    <option value="women">Women</option>
+                    <option value="children">Children</option>
+                </select>
+                <input type="text" class="py-2 col-span-12 md:col-span-4 md:mt-0 px-3 mt-2" placeholder="What are you looking for?">
+                <input type="text" class="py-2 col-span-12 md:col-span-4 md:mt-0 px-3 mt-2" placeholder="Season/Categories">
+                <a href="./search.html" class="col-span-12 md:col-span-2">
+                    <button type="submit" class=" bg-gray text-white w-full py-3 mt-2  md:mt-0 md:py md:mx-2">Search</button>
+                </a>
+            </div>
             
-            <select name="deps" class="py-1 px-2 w-full my-2 mt-7">
-                <option value="all">All Departments</option>
-                <option value="men">Men</option>
-                <option value="women">Women</option>
-                <option value="children">Children</option>
-            </select>
-            
-            <input type="text" class="py-1 px-2 w-full my-1" placeholder="What are you looking for?">
-            
-            <input type="text" class="py-1 px-2 w-full my-1" placeholder="Country/Region">
-            
-            <a href="./search.html">
-                <button type="submit" class="px-8 my-1 py-2 bg-gray text-white">Search</button>
-            </a>
     </section>
     <!-- SEARCH -->
     <!-- HOT ADS -->

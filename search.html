@@ -47,7 +47,7 @@
     
         <input type="text" class="py-1 px-2 w-full my-1" placeholder="What are you looking for?">
     
-        <input type="text" class="py-1 px-2 w-full my-1" placeholder="Country/Region">
+        <input type="text" class="py-1 px-2 w-full my-1" placeholder="Season/Categories">
     
         <a href="./search.html">
             <button type="submit" class="px-8 my-1 py-2 bg-gray text-white">Search</button>
@@ -56,15 +56,26 @@
     <!-- SEARCH -->
     <main class="bg-main px-6">
         <section>
-            <h2>
-                <span>10</span>
-                results for "<span>Hoodie</span>"
-                at "<span>Egypt</span>"
-                in Department "<span>Men</span>"
+            <h2 class="text-sm">
+                <span>8</span>
+                result/s for "<span class="font-bold">Hoodie</span>"
+                in Department "<span class="font-bold">Men</span>"
+                Season "<span class="font-bold">Winter</span>"
             </h2>
-            <select name="filter" id="filter">
-                <option value="Date Arrived">Date Arrived</option>
-            </select>
+            <div class="flex justify-between">
+                <div class="mt-2">
+                    <label for="filter">Filter by</label>
+                    <select name="filter" id="filter">
+                        <option value="Date Arrived">Date</option>
+                    </select>
+                </div>
+                <div class="mt-2">
+                    <label for="filter">Sort by</label>
+                    <select name="filter" id="filter">
+                        <option value="price">Price</option>
+                    </select>
+                </div>
+            </div>
         </section>
         <div id="result-cards">
             <!-- CARD 1 -->
