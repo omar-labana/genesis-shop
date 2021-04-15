@@ -1,5 +1,4 @@
 @import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
-@import url(//db.onlinewebfonts.com/c/9134c840456c4db0a3489b3db0fd3298?family=Helvetica+Neue+LT+Com);
 .bg-gray {
   background-color: #383838;
 }
@@ -9,7 +8,7 @@
 }
 
 .sec-color-text {
-  color: #888888;
+  color: #888;
 }
 
 .base-color-bg {
@@ -36,12 +35,8 @@
   font-size: 9px;
 }
 
-.primary-text {
-  font-family: 'Helvetica Neue LT Com';
-}
-
 .sec-text {
-  font-family: 'GothamPro';
+  font-family: 'GothamPro', 'Courier New', Courier, monospace;
 }
 
 .darky-text {
