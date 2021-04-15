@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genesis Shop</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/080dba293e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -56,8 +56,8 @@
             </select>
             <input type="text" class="py-2 col-span-12 md:col-span-4 md:mt-0 px-3 mt-2" placeholder="What are you looking for?">
             <input type="text" class="py-2 col-span-12 md:col-span-4 md:mt-0 px-3 mt-2" placeholder="Season/Categories">
-            <a href="./search.html" class="col-span-12 md:col-span-2">
-                <button type="submit" class=" bg-gray text-white w-full py-3 mt-2  md:mt-0 md:py md:mx-2">Search</button>
+            <a class=" bg-gray text-white w-full py-3 mt-2  md:mt-0 md:py md:mx-2 col-span-12 md:col-span-2 text-center">
+                Search
             </a>
         </div>
     
@@ -73,7 +73,7 @@
                         <label for="sale">On Sale</label>
                     </span>
                     <span class="ml-9">
-                        <input type="checkbox" name="sale" id="sale">
+                        <input type="checkbox" name="new-arrival" id="new-arrival">
                         <label for="sale">New Arrival</label>
                     </span>
                 </div>
@@ -120,20 +120,20 @@
                         <h2 class="border-b font-bold my-5">Price Range</h2>
                     </li>
                     <li>
-                        <input type="checkbox" name="range-1" id="srange-1">
+                        <input type="checkbox" name="range-1" id="range-1">
                         <label for="range-1">5$ - 10$</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="range-2" id="srange-2">
+                        <input type="checkbox" name="range-2" id="range-2">
                         <label for="range-2">10$ - 15$</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="range-2" id="srange-2">
+                        <input type="checkbox" name="range-3" id="srange-3">
                         <label for="range-2">15$ - 20$</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="range-3" id="srange-3">
-                        <label for="range-3">+20$</label>
+                        <input type="checkbox" name="range-4" id="range-4">
+                        <label for="range-4">+20$</label>
                     </li>
                 </ul>
             </div>
@@ -153,8 +153,8 @@
                             </select>
                         </div>
                         <div class="mt-2">
-                            <label for="filter">Sort by</label>
-                            <select name="filter" id="filter">
+                            <label for="sort">Sort by</label>
+                            <select name="sort" id="sort">
                                 <option value="price">Price</option>
                             </select>
                         </div>
@@ -381,7 +381,7 @@
                 <ul>
                     <li class="flex justify-end items-center my-3">
                         <p class="base-color-text font-bold text-center w-1/2">COUNTRY</p>
-                        <select name="lang" id="lang" class="px-3 py-1 border border-gray-300 w-1/2  ">
+                        <select name="coun" id="coun" class="px-3 py-1 border border-gray-300 w-1/2  ">
                             <option value="en">Egypt</option>
                         </select>
                     </li>
@@ -393,7 +393,7 @@
                     </li>
                     <li class="flex justify-end items-center my-3">
                         <p class="base-color-text font-bold text-center w-1/2">CURRENCY</p>
-                        <select name="lang" id="lang" class="px-3 py-1 border border-gray-300 w-1/2 ">
+                        <select name="currency" id="currency" class="px-3 py-1 border border-gray-300 w-1/2 ">
                             <option value="en">US$</option>
                         </select>
                     </li>
