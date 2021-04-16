@@ -1,0 +1,53 @@
+@import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
+
+$base-color: #d35266;
+$base-bg: #383838;
+$sec-color: #888;
+
+.bg-gray {
+  background-color: $base-bg;
+}
+
+.base-color-text {
+  color: $base-color;
+}
+
+.sec-color-text {
+  color: $sec-color;
+}
+
+.base-color-bg {
+  background-color: $base-color;
+}
+
+.bg-main {
+  background-color: #f7f7f7;
+}
+
+#shop-icon {
+  fill: $base-color;
+}
+
+.nav-links {
+  display: inline;
+
+  li {
+    display: inline;
+  }
+}
+
+.small-text {
+  font-size: 9px;
+}
+
+.sec-text {
+  font-family: 'GothamPro', 'Courier New', Courier, monospace;
+}
+
+.darky-text {
+  color: $base-bg;
+}
+
+.card {
+  background-color: white;
+}
